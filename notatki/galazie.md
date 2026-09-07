@@ -1,1 +1,1 @@
-Wersja z gałęzi master
+Wersja po rozwiązaniu konfliktu.
