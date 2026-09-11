@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wizytówka – Jan Kowalski</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="naglowek">
+      <img
+        class="avatar"
+        src="avatar.svg"
+        alt="Awatar: inicjały JK na fioletowym tle"
+      />
+      <div>
+        <h1>Jan Kowalski</h1>
+        <p class="podtytul">Frontend Developer / Uczeń</p>
+      </div>
+    </header>
+
+    <main>
+      <!-- Sekcja O mnie -->
+      <section>
+        <h2>O mnie</h2>
+        <p>
+          Cześć! Interesuję się tworzeniem stron internetowych oraz nowoczesnymi
+          technologiami webowymi. Uczę się pisać czysty kod w HTML, CSS i
+          JavaScript.
+        </p>
+      </section>
+
+      <!-- Sekcja Umiejętności -->
+      <section>
+        <h2>Moje umiejętności</h2>
+        <ul class="lista-umiejetnosci">
+          <li>Semantyczny HTML5</li>
+          <li>Stylowanie stron za pomocą CSS (Flexbox, Grid)</li>
+          <li>Podstawy programowania w JavaScript</li>
+          <li>Obsługa systemu kontroli wersji Git</li>
+        </ul>
+      </section>
+
+      <!-- Sekcja Kontakt z formularzem -->
+      <section id="kontakt">
+        <h2>Kontakt</h2>
+
+        <form id="formularz" novalidate>
+          <!-- Pole: Imię i nazwisko -->
+          <div class="pole">
+            <label for="imie">Imię i nazwisko</label>
+            <input type="text" id="imie" name="imie" />
+            <p class="blad" id="blad-imie"></p>
+          </div>
+
+          <!-- Pole: Adres e-mail -->
+          <div class="pole">
+            <label for="email">Adres e-mail</label>
+            <input type="email" id="email" name="email" />
+            <p class="blad" id="blad-email"></p>
+          </div>
+
+          <!-- Pole: Temat -->
+          <div class="pole">
+            <label for="temat">Temat</label>
+            <select id="temat" name="temat">
+              <option value="">— wybierz temat —</option>
+              <option value="wspolpraca">Propozycja współpracy</option>
+              <option value="pytanie">Pytanie o projekt</option>
+              <option value="inne">Inne</option>
+            </select>
+            <p class="blad" id="blad-temat"></p>
+          </div>
+
+          <!-- Pole: Wiadomość -->
+          <div class="pole">
+            <label for="wiadomosc">Wiadomość</label>
+            <textarea id="wiadomosc" name="wiadomosc" rows="5"></textarea>
+            <p class="blad" id="blad-wiadomosc"></p>
+          </div>
+
+          <button type="submit" class="przycisk">Wyślij wiadomość</button>
+        </form>
+
+        <!-- Miejsce na podziękowanie (domyślnie ukryte za pomocą atrybutu hidden) -->
+        <div id="podziekowanie" class="podziekowanie" hidden>
+          <h3>Dziękuję za wiadomość!</h3>
+          <p id="podziekowanie-tresc"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="stopka">
+      <p>&copy; 2026 Wizytówka. Stworzono na zajęcia inf04.</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
